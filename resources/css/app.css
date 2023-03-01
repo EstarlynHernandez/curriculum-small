@@ -75,7 +75,10 @@ a {
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
 }
-
+.fullPage{
+    display: grid;
+    place-items: center;
+}
 .fullPage__link{
     color: var(--link);
     font-size: 1.2rem;
@@ -101,6 +104,7 @@ a {
     width: 115px;
     height: 80px;
     background-color: var(--white);
+    border-radius: .5rem;
 }
 
 /* -info- */
@@ -198,6 +202,7 @@ a {
 }
 
 .card{
+    border-radius: .5rem;
     width: 120px;
     height: 90px;
     background-color: var(--white);
