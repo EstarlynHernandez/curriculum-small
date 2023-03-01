@@ -13,22 +13,22 @@
             <ul class="contact__icons">
                 <li class="conctact__icons--list">
                     <a href="https://github.com/EstarlynHernandez" class="contact__icons__link">
-                        <img class="contact__icons__img" src="icons/light/github.svg" alt="github" title='GitHub'>
+                        <img class="contact__icons__img" src="{{asset('icons/light/github.svg')}}" alt="github" title='GitHub'>
                     </a>
                 </li>
                 <li class="conctact__icons--list">
                     <a class="contact__icons__link">
-                        <img class="contact__icons__img" src="icons/light/linkedin.svg" alt="linkedin" title="LinkedIn">
+                        <img class="contact__icons__img" src="{{asset('icons/light/linkedin.svg')}}" alt="linkedin" title="LinkedIn">
                     </a>
                 </li>
                 <li class="conctact__icons--list">
                     <a class="contact__icons__link">
-                        <img class="contact__icons__img" src="icons/light/mail.svg" alt="mail" title="E-Mail">
+                        <img class="contact__icons__img" src="{{asset('icons/light/mail.svg')}}" alt="mail" title="E-Mail">
                     </a>
                 </li>
             </ul>
         </nav>
-        
+
         {{-- fullPage --}}
         <div class="fullPage">
             <a href="#" class="fullPage__link">Full Info</a>
@@ -105,17 +105,17 @@
                 <ul class="contact__icons">
                     <li class="conctact__icons--list">
                         <a href="https://github.com/EstarlynHernandez" class="contact__icons__link">
-                            <img class="contact__icons__img" src="icons/light/github.svg" alt="github" title='GitHub'>
+                            <img class="contact__icons__img" src="{{asset('icons/light/github.svg')}}" alt="github" title='GitHub'>
                         </a>
                     </li>
                     <li class="conctact__icons--list">
                         <a class="contact__icons__link">
-                            <img class="contact__icons__img" src="icons/light/linkedin.svg" alt="linkedin" title="LinkedIn">
+                            <img class="contact__icons__img" src="{{asset('icons/light/linkedin.svg')}}" alt="linkedin" title="LinkedIn">
                         </a>
                     </li>
                     <li class="conctact__icons--list">
                         <a class="contact__icons__link">
-                            <img class="contact__icons__img" src="icons/light/mail.svg" alt="mail" title="E-Mail">
+                            <img class="contact__icons__img" src="{{asset('icons/light/mail.svg')}}" alt="mail" title="E-Mail">
                         </a>
                     </li>
                 </ul>
