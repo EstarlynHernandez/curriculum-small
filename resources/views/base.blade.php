@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/desktop.css') }}" media="screen and (min-width:640px)">
+    <link rel="shortcut icon" href="{{asset('icons/dark/name.svg')}}" type="image/x-icon">
     <title>@yield('title')</title>
 
     {{-- google font --}}

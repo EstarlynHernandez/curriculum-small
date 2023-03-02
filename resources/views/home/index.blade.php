@@ -13,17 +13,20 @@
             <ul class="contact__icons">
                 <li class="conctact__icons--list">
                     <a href="https://github.com/EstarlynHernandez" class="contact__icons__link">
-                        <img class="contact__icons__img" src="{{asset('icons/light/github.svg')}}" alt="github" title='GitHub'>
+                        <img class="contact__icons__img" src="{{ asset('icons/light/github.svg') }}" alt="github"
+                            title='GitHub'>
                     </a>
                 </li>
                 <li class="conctact__icons--list">
                     <a class="contact__icons__link">
-                        <img class="contact__icons__img" src="{{asset('icons/light/linkedin.svg')}}" alt="linkedin" title="LinkedIn">
+                        <img class="contact__icons__img" src="{{ asset('icons/light/linkedin.svg') }}" alt="linkedin"
+                            title="LinkedIn">
                     </a>
                 </li>
                 <li class="conctact__icons--list">
                     <a class="contact__icons__link">
-                        <img class="contact__icons__img" src="{{asset('icons/light/mail.svg')}}" alt="mail" title="E-Mail">
+                        <img class="contact__icons__img" src="{{ asset('icons/light/mail.svg') }}" alt="mail"
+                            title="E-Mail">
                     </a>
                 </li>
             </ul>
@@ -45,13 +48,13 @@
 
             {{-- covers --}}
             <div class="covers">
-                <picture class="card--container">
+                <picture class="card card--extra">
+                    <a href="https://estarlyn.com/" target="__blank"><img src="{{ asset('img/curriculum-small.jpeg') }}" alt="curriculum-small" title="This Page"></a>
+                </picture>
+                <picture class="card card--extra">
 
                 </picture>
-                <picture class="card--container">
-
-                </picture>
-                <picture class="card--container">
+                <picture class="card card--extra">
 
                 </picture>
             </div>
@@ -70,21 +73,11 @@
                     I have an A2 English level.
                 </p>
                 <div class="tecnologies">
-                    <div class="frontEnd">
-                        <h3 class="tecnologies__title">Front End</h3>
-                        <p class="tecnologies__text ">HTML</p>
-                        <p class="tecnologies__text ">CSS</p>
-                        <p class="tecnologies__text ">JavaScript</p>
-                        <p class="tecnologies__text">React.js</p>
-                    </div>
+                    <h3 class="tecnologies__title">Front End</h3>
 
-                    <div class="backEnd">
-                        <h3 class="tecnologies__title">Back End</h3>
-                        <p class="tecnologies__text">PHP</p>
-                        <p class="tecnologies__text">MySQL</p>
-                        <p class="tecnologies__text">Laravel</p>
-                        <p class="tecnologies__text">Symfony</p>
-                    </div>
+                    <h3 class="tecnologies__title">Back End</h3>
+
+                    <h3 class="tecnologies__title">Language</h3>
                 </div>
             </div>
 
@@ -97,44 +90,74 @@
             </div>
         </section>
 
-        {{-- more --}}
-        <section class="more">
-            {{-- contact --}}
-            <div class="contact">
-                <h2 class="contact__title">Contact</h2>
-                <ul class="contact__icons">
-                    <li class="conctact__icons--list">
-                        <a href="https://github.com/EstarlynHernandez" class="contact__icons__link">
-                            <img class="contact__icons__img" src="{{asset('icons/light/github.svg')}}" alt="github" title='GitHub'>
-                        </a>
-                    </li>
-                    <li class="conctact__icons--list">
-                        <a class="contact__icons__link">
-                            <img class="contact__icons__img" src="{{asset('icons/light/linkedin.svg')}}" alt="linkedin" title="LinkedIn">
-                        </a>
-                    </li>
-                    <li class="conctact__icons--list">
-                        <a class="contact__icons__link">
-                            <img class="contact__icons__img" src="{{asset('icons/light/mail.svg')}}" alt="mail" title="E-Mail">
-                        </a>
-                    </li>
-                </ul>
+        {{-- divisor --}}
+        <div class="divisor"></div>
 
-                <a href="#" class="more__link">More Pages</a>
-            </div>
-
-            {{-- pages --}}
-            <div class="pages">
-                <h2 class="pages__title">Pages</h2>
-                <div class="cards">
-                    <picture class="card">
-
-                    </picture>
-                    <picture class="card">
-
-                    </picture>
-                </div>
-            </div>
+        {{-- cards --}}
+        <section class="pages">
+            <h2 class="pages__title">Pages</h2>
+            <section class="cards">
+                <picture class="card">
+                    <img src="{{ asset('img/curriculum-small.jpeg') }}" alt="curriculum-small" title="This Page">
+                </picture>
+                <picture class="card">
+                    
+                </picture>
+                <picture class="card">
+                    
+                </picture>
+                <picture class="card">
+                    
+                </picture>
+            </section>
         </section>
+            
+        {{-- divisor --}}
+        <div class="divisor"></div>
     </main>
+
+    {{-- more --}}
+    <section class="more">
+        {{-- contact --}}
+        <article class="contact">
+            <h2 class="contact__title">Contact</h2>
+            <ul class="contact__icons">
+                <li class="conctact__icons--list">
+                    <a href="https://github.com/EstarlynHernandez" class="contact__icons__link">
+                        <img class="contact__icons__img" src="{{ asset('icons/light/github.svg') }}" alt="github"
+                            title='GitHub'>
+                    </a>
+                </li>
+                <li class="conctact__icons--list">
+                    <a class="contact__icons__link">
+                        <img class="contact__icons__img" src="{{ asset('icons/light/linkedin.svg') }}" alt="linkedin"
+                            title="LinkedIn">
+                    </a>
+                </li>
+                <li class="conctact__icons--list">
+                    <a class="contact__icons__link">
+                        <img class="contact__icons__img" src="{{ asset('icons/light/mail.svg') }}" alt="mail"
+                            title="E-Mail">
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#" class="more__link">More Pages</a>
+        </article>
+
+        {{-- pages --}}
+        <article class="pages--more">
+            <h2 class="pages__title--more">Pages</h2>
+            <div class="cards--footer">
+                <picture class="card card--extra">
+
+                </picture>
+            </div>
+        </article>
+
+    </section>
+    <footer class="reserved">
+        <p class="reserved__text">Estarlyn.com is a page reserved for my job info and my personal projects.</p>
+        <p class="reserved__text">This page is continuously updated since the first day of March 2023.</p>
+    </footer>
 @endsection
