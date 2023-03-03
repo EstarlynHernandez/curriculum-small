@@ -1,5 +1,9 @@
 @extends('../base')
 
+@section('seo')
+    <meta name="description" content="This is a Web page for Estarlyn Hernandez's projects">
+@endsection
+
 @section('title')
     Home
 @endsection
@@ -36,6 +40,7 @@
         <div class="fullPage">
             <a href="#" class="fullPage__link">Full Info</a>
         </div>
+
     </header>
 
     {{-- main --}}
@@ -49,7 +54,8 @@
             {{-- covers --}}
             <div class="covers">
                 <picture class="card card--extra">
-                    <a href="https://estarlyn.com/" target="__blank"><img src="{{ asset('img/curriculum-small.jpeg') }}" alt="curriculum-small" title="This Page"></a>
+                    <a href="https://estarlyn.com/" target="__blank"><img src="{{ asset('img/curriculum-small.webp') }}"
+                            alt="curriculum-small" title="This Page"></a>
                 </picture>
                 <picture class="card card--extra">
 
@@ -69,8 +75,11 @@
             <div class="knowledge">
                 <h2 class="info__title knowledge__title">knowledge</h2>
                 <p class="info__text knowledge__text">
-                    I am a web developer who specializes in the front end. I know HTML, CSS, JavaScript, and React.
-                    I have an A2 English level.
+                    I am a web developer who specializes in front-end development.
+                    I can also work on the back-end with frameworks like Laravel
+                    and languages like PHP. For example, this page was created with
+                    Laravel using Blade, PHP, CSS, and JavaScript. If you want to know
+                    all of my language skills, you can click on the button below this text.
                 </p>
                 <div class="tecnologies">
                     <h3 class="tecnologies__title">Front End</h3>
@@ -84,9 +93,16 @@
             {{-- about me --}}
             <div class="about">
                 <h2 class="info__title about__title">About Me</h2>
-                <p class="info__text about__text">I’m Estarlyn. I’m 24 years old. I study by myself and I continue to study
-                    other web
-                    technologies and game development.</p>
+                <p class="info__text about__text"><span class="info__list">Name:</span> Estarlyn </p>
+                <p class="info__text about__text"><span class="info__list">Last name:</span> Hernandez </p>
+                <p class="info__text about__text"><span class="info__list">Hobbies:</span> Video games, music, programming,
+                    computing and hardware </p>
+                <p class="info__text about__text"><span class="info__list">More:</span> I am Dominican and I live in Italy.
+                    I did middle school in the
+                    Dominican Republic and high school in Italy. I started my web developer study by myself on the internet
+                    on various pages like YouTube, Stack Overflow, Udemy, Platzi and more. If you are interested in having
+                    more information, you can contact me by my <span class="info__link">contact details</span>.</p>
+
             </div>
         </section>
 
@@ -98,20 +114,20 @@
             <h2 class="pages__title">Pages</h2>
             <section class="cards">
                 <picture class="card">
-                    <img src="{{ asset('img/curriculum-small.jpeg') }}" alt="curriculum-small" title="This Page">
+                    <img src="{{ asset('img/curriculum-small.webp') }}" alt="curriculum-small" title="This Page">
                 </picture>
                 <picture class="card">
-                    
+
                 </picture>
                 <picture class="card">
-                    
+
                 </picture>
                 <picture class="card">
-                    
+
                 </picture>
             </section>
         </section>
-            
+
         {{-- divisor --}}
         <div class="divisor"></div>
     </main>
@@ -141,23 +157,49 @@
                     </a>
                 </li>
             </ul>
-
-            <a href="#" class="more__link">More Pages</a>
         </article>
 
         {{-- pages --}}
         <article class="pages--more">
             <h2 class="pages__title--more">Pages</h2>
-            <div class="cards--footer">
-                <picture class="card card--extra">
-
-                </picture>
-            </div>
+            <a href="#" class="more__link">More Pages</a>
         </article>
 
     </section>
     <footer class="reserved">
-        <p class="reserved__text">Estarlyn.com is a page reserved for my job info and my personal projects.</p>
-        <p class="reserved__text">This page is continuously updated since the first day of March 2023.</p>
+        <p class="reserved__text">estarlyn.com and estyos.eu are pages reserved for my job info and my personal projects.
+        </p>
+        <p class="reserved__text">This page is continuously updated since the day 27 of feb 2023.</p>
     </footer>
+
+    {{-- full screen js  --}}
+    <div name='config' class="options"></div>
+
+    <div class="shadow dnone"></div>
+        <div class="shadow--menu dnone">
+            <div class="config dnone">
+                <h2 class="config__title--main">Config</span></h2>
+                <h2 class="config__title">Font Size</h2>
+                <div class="config--size">
+                    <button id='text__small' class="config__button button">Small</button>
+                    <button id="text__medium" class="config__button button button--active">Medium</button>
+                    <button id="text__big" class="config__button button">Big</button>
+                </div>
+
+                <h2 class="config__title">Color</h2>
+                <div class="config--ambient">
+                    <button class="config__button button button--active">Light</button>
+                    <button class="config__button button">Dark</button>
+                </div>
+
+                <h2 class="config__title">Lang</h2>
+                <div class="config--size">
+                    <a id='es' class="config__button button">Español</a>
+                    <a id="en" class="config__button button button--active">English</a>
+                    <a id="it" class="config__button button">Italiano</a>
+                </div>
+            </div>
+            <div class="contact dnone"></div>
+            <div class="working dnone"></div>
+        </div>
 @endsection

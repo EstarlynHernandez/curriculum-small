@@ -31,11 +31,28 @@
 /* info */
 
 .info{
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+.knowledge{
+    position: relative;
+}
+
+.tecnologies{
+    margin: 0 auto;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+}
+
+.tecnologies__title:hover{
+    background: var(--active);
+    transform: scale(1.1);
 }
 
 /* contact */
@@ -59,4 +76,13 @@
 .card--extra{
     width: 320px;
     height: 200px;
+}
+
+/* shadow */
+
+.shadow--menu{
+    right: 1rem;
+    bottom: 1rem;
+    width: 27rem;
+    height: 30rem;
 }
