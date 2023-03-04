@@ -18,10 +18,37 @@ function main() {
     let config = document.querySelector('.options');
     let shadow = document.querySelector('.shadow');
     let textSize = document.querySelectorAll('.config--size button');
+    let works = document.querySelectorAll('.work');
+    let back = document.querySelector('.back_end');
+    let front = document.querySelector('.front_end');
+    let lang = document.querySelector('.language--lang');
+    let contact = document.querySelector('.info__link--open');
 
     shadow.addEventListener('click', () => {
         menuFull();
     })
+    
+    contact.addEventListener('click', () => {
+        menuFull('contact--shadow');
+    })
+
+    front.addEventListener('click', () => {
+        menuFull('front');
+    })
+
+    back.addEventListener('click', () => {
+        menuFull('back');
+    })
+
+    lang.addEventListener('click', () => {
+        menuFull('lang');
+    })
+
+    works.forEach(working => {
+        working.addEventListener('click', () => {
+            menuFull('working');
+        });
+    });
 
     config.addEventListener('click', () => {
         menuFull('config')
@@ -65,7 +92,7 @@ function menuFull(name) {
 
     setTimeout(() => {
         container.classList.add('dnone');
-    }, 500);
+    }, 250);
 
     shadow.classList.add('dnone');
     shadowChildren.forEach(element => {

@@ -1,14 +1,15 @@
 /* --colors-- */
 :root {
-    --same: #000;
+    --same: #303030;
     --contrast: #fff;
     --background: linear-gradient(#3d3d3d, #2a2a2a, #0f0f0f);
-    --gray: linear-gradient(90deg, #4e4e4e, #777777);
-    --link: #FF9494;
-    --danger: #B35656;
-    --help: #FFFEAD;
-    --active: #7accff;
-    --more: linear-gradient(90deg, #517b97, #7db2d3);
+    --gray:#4e4e4e;
+    --gray2: #777;
+    --link: #C28127;
+    --danger: #C24F77;
+    --help: #C2A83E;
+    --active: #464BC2;
+    --more: #4584C2;
 }
 
 /* --globals-- */
@@ -66,11 +67,11 @@ a {
     color: var(--contrast);
 }
 
-.dnone{
+.dnone {
     display: none !important;
 }
 
-.hidden{
+.hidden {
     overflow: hidden;
 }
 
@@ -127,19 +128,6 @@ a {
     font-size: 1.2rem;
 }
 
-.options {
-    position: fixed;
-    display: block;
-    cursor: pointer;
-    width: 3rem;
-    height: 3rem;
-    bottom: 1rem;
-    right: 1rem;
-    border-radius: 2rem;
-    background-image: url('/icons/dark/menu.svg');
-    background-size: cover;
-}
-
 /* --main-- */
 /* name */
 
@@ -181,6 +169,12 @@ a {
     text-align: center;
 }
 
+.info__title--principal {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 .info__text {
     font-size: 1.5rem;
     font-weight: 300;
@@ -204,7 +198,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background: var(--gray);
+    background: linear-gradient(90deg, var(--gray), var(--gray2));
     border-radius: 2rem;
     padding: .5rem;
     box-shadow: 0 0 1rem var(--gray);
@@ -222,7 +216,7 @@ a {
     border-bottom: solid var(--contrast) 1px;
     margin-bottom: .5rem;
     background: var(--help);
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 100%;
     padding: .5rem;
     color: black;
@@ -239,7 +233,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    background: var(--more);
+    background: linear-gradient(90deg, var(--active), var(--more));
     border-radius: 2rem;
     padding: 1rem;
     animation: on_of 5s infinite;
@@ -332,8 +326,8 @@ a {
     overflow: hidden;
     position: relative;
     border-radius: .5rem;
-    width: 180px;
-    height: 112.5px;
+    width: 170px;
+    height: 106.25px;
     background-color: var(--gray);
     background:
         radial-gradient(transparent 0%, transparent 70%, #ff6a0054 70%) 12px -50px,
@@ -344,8 +338,8 @@ a {
 }
 
 .card--extra {
-    width: 125px;
-    height: 78.13px;
+    width: 115px;
+    height: 71.88px;
 }
 
 @media screen and (min-width: 640px) {
@@ -374,19 +368,34 @@ a {
 
 /* menu full screen */
 
-.shadow{
+
+
+.options {
+    position: fixed;
+    display: block;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    bottom: 2%;
+    right: 2%;
+    border-radius: 2rem;
+    background-image: url('/icons/dark/menu.svg');
+    background-size: cover;
+}
+
+.shadow {
     top: 0;
     left: 0;
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: #8080805d;
+    background-color: #000000d9;
     display: grid;
     place-items: center;
     z-index: 0;
 }
 
-.shadow--menu{
+.shadow--menu {
     bottom: 20%;
     right: 15%;
     position: fixed;
@@ -396,10 +405,12 @@ a {
     background-color: gray;
     border-radius: 1rem;
     padding: 1rem;
-    transition: all 1s;
+    transition: all .5s;
+    overflow: auto;
 }
 
-.config__title--main{
+/* config */
+.config__title--main {
     display: block;
     font-size: 2.8rem;
     text-align: center;
@@ -408,7 +419,7 @@ a {
     z-index: 100;
 }
 
-.config__title--main::after{
+.config__title--main::after {
     content: ' ';
     position: absolute;
     display: block;
@@ -422,20 +433,20 @@ a {
     background-position: center;
 }
 
-.config__title{
+.config__title {
     font-size: 2rem;
     text-align: center;
     padding: 1rem;
 }
 
-.config--size{
+.config--size {
     display: flex;
     justify-content: space-evenly;
     gap: .5rem;
-    transition: 1s all;
+    transition: .5s all;
 }
 
-.button{
+.button {
     background: var(--active);
     padding: .8rem .2rem;
     color: var(--contrast);
@@ -445,14 +456,86 @@ a {
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
+    font-size: 1.3rem;
 }
 
-.button--active{
+.button--active {
     background-color: var(--gray);
     border: solid 1px var(--active);
 }
 
-.config--ambient{
+.config--ambient {
     display: flex;
     gap: 1rem;
+}
+
+/* working */
+
+.working {
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.working__title {
+    background-color: #c39631;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    padding: .5rem;
+}
+
+.working__text {
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    padding: .5rem;
+    color: var(--contrast);
+}
+
+/* contact full */
+
+.contact__link{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 4fr;
+    padding: .2rem .5rem;
+    align-items: center;
+    font-size: 1.5rem;
+    background: var(--same);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact__img{
+    width: 3rem;
+}
+
+/* languages */
+
+.mylanguage__title{
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.mylanguage--container{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.mylanguage__text{
+    font-size: 1.5rem;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 1rem;
+    background: var(--same);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.mylanguage__icon{
+    width: 2.2rem;
 }

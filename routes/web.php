@@ -14,10 +14,8 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return view('working');
-});
+Route::get('/', [HomeController::class, 'index'])->middleware('lang');
 
-Route::get('/home', [HomeController::class, 'index'])->name('Home');
+Route::get('/{locale}', [HomeController::class, 'index'])->name('Home');
 
 

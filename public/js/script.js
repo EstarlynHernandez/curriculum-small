@@ -20,8 +20,30 @@ function main() {
   var config = document.querySelector('.options');
   var shadow = document.querySelector('.shadow');
   var textSize = document.querySelectorAll('.config--size button');
+  var works = document.querySelectorAll('.work');
+  var back = document.querySelector('.back_end');
+  var front = document.querySelector('.front_end');
+  var lang = document.querySelector('.language--lang');
+  var contact = document.querySelector('.info__link--open');
   shadow.addEventListener('click', function () {
     menuFull();
+  });
+  contact.addEventListener('click', function () {
+    menuFull('contact--shadow');
+  });
+  front.addEventListener('click', function () {
+    menuFull('front');
+  });
+  back.addEventListener('click', function () {
+    menuFull('back');
+  });
+  lang.addEventListener('click', function () {
+    menuFull('lang');
+  });
+  works.forEach(function (working) {
+    working.addEventListener('click', function () {
+      menuFull('working');
+    });
   });
   config.addEventListener('click', function () {
     menuFull('config');
@@ -52,7 +74,7 @@ function menuFull(name) {
   }
   setTimeout(function () {
     container.classList.add('dnone');
-  }, 500);
+  }, 250);
   shadow.classList.add('dnone');
   shadowChildren.forEach(function (element) {
     element.classList.add('dnone');

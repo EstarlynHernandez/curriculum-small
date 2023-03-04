@@ -39,6 +39,10 @@
     justify-content: space-between;
 }
 
+.info__title--principal{
+    font-size: 4.5rem;
+}
+
 .knowledge{
     position: relative;
 }
@@ -83,6 +87,8 @@
 .shadow--menu{
     right: 1rem;
     bottom: 1rem;
-    width: 27rem;
+    width: 30rem;
     height: 30rem;
 }
+
+
