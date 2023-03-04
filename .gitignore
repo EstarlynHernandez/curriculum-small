@@ -20,3 +20,7 @@ yarn-error.log
 webpack.mix.js
 vite.config.js
 /public/mix-manifest.json
+/lang/en/auth.php
+/lang/en/pagination.php
+/lang/en/passwords.php
+/lang/en/validation.php

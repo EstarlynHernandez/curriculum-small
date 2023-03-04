@@ -211,7 +211,7 @@
         </div>
 
         <div class="front dnone">
-            <h2 class="mylanguage__title">{{ __('text.back_end') }}</h2>
+            <h2 class="mylanguage__title">{{ __('text.front_end') }}</h2>
             <div class="mylanguage--container">
                 <p class="mylanguage__text">
                     <img src="{{ asset('icons/light/html.svg') }}" alt="HTML" title="HTML"
@@ -237,7 +237,7 @@
         </div>
 
         <div class="back dnone">
-            <h2 class="mylanguage__title">{{ __('text.front_end') }}</h2>
+            <h2 class="mylanguage__title">{{ __('text.back_end') }}</h2>
             <div class="mylanguage--container">
                 <p class="mylanguage__text">
                     <img src="{{ asset('icons/light/code.svg') }}" alt="PHP" title="php"
