@@ -173,7 +173,7 @@
     <div class="shadow dnone"></div>
     <div class="shadow--menu dnone">
         <div class="config dnone">
-            <h2 class="config__title--main">{{ __('text.config') }}</span></h2>
+            <h2 class="config__title--main">{{ __('text.config') }}</h2>
             <h2 class="config__title">{{ __('text.font_size') }}</h2>
             <div class="config--size">
                 <button id='text__small' class="config__button button">{{ __('text.small') }}</button>

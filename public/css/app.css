@@ -419,7 +419,7 @@ a {
     z-index: 100;
 }
 
-.config__title--main::after {
+/* .config__title--main::after {
     content: ' ';
     position: absolute;
     display: block;
@@ -431,7 +431,7 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
 .config__title {
     font-size: 2rem;

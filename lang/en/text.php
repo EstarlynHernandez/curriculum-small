@@ -4,7 +4,7 @@ return [
     'contact' => 'Contact',
     'full_info' => 'Full Info',
     'this_page' => 'This Page',
-    'knowledge' => 'Knowledge',
+    'knowledge' => 'Skills',
     'front_end' => 'Front End',
     'back_end' => 'Back End',
     'languages' => 'Languages',
