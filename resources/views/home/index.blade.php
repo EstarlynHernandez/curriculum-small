@@ -90,7 +90,7 @@
             <div class="about">
                 <h2 class="info__title about__title">{{ __('text.about_me') }}</h2>
                 <p class="info__text about__text"><span class="info__list">{{ __('text.name') }}:</span>
-                    {{ __('personal.name') }}n </p>
+                    {{ __('personal.name') }}</p>
                 <p class="info__text about__text"><span class="info__list">{{ __('text.lastname') }}:</span>
                     {{ __('personal.lastname') }} </p>
                 <p class="info__text about__text"><span class="info__list">{{ __('text.hobbies') }}:</span>
