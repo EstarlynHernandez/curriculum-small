@@ -164,7 +164,6 @@
     </section>
     <footer class="reserved">
         <p class="reserved__text">{{ __('personal.page_info') }}</p>
-        <p class="reserved__text">{{ __('personal.page_updating') }}</p>
     </footer>
 
     {{-- full screen js  --}}
