@@ -24,3 +24,12 @@ vite.config.js
 /lang/en/pagination.php
 /lang/en/passwords.php
 /lang/en/validation.php
+.htaccess
+.styleci.yml
+composer-setup.php
+composer.phar
+database/migrations/2014_10_12_100000_create_password_resets_table.php
+index.php
+lang/en.json
+laravel/
+
