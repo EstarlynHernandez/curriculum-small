@@ -16,7 +16,7 @@
             <h4 class="nav__title">{{ __('text.contact') }}</h4>
             <ul class="contact__icons">
                 <li class="conctact__icons--list">
-                    <a href="{{ __('personal.github') }}" class="contact__icons__link">
+                    <a href="{{ __('personal.github') }}" target="__blank" class="contact__icons__link">
                         <img class="contact__icons__img" src="{{ asset('icons/light/github.svg') }}" alt="github"
                             title='GitHub'>
                     </a>
@@ -135,7 +135,7 @@
             <h2 class="contact__title">{{ __('text.contact') }}</h2>
             <ul class="contact__icons">
                 <li class="conctact__icons--list">
-                    <a href="{{ __('personal.github') }}" class="contact__icons__link">
+                    <a href="{{ __('personal.github') }}" target="__blank" class="contact__icons__link">
                         <img class="contact__icons__img" src="{{ asset('icons/light/github.svg') }}" alt="github"
                             title='GitHub'>
                     </a>
@@ -201,10 +201,10 @@
             <h2 class="contact__title">Contact</h2>
             <div class="contact--container">
                 <a href="{{ __('personal.github') }}" target="__blank" class="contact__link"><img class="contact__img"
-                        src="{{ asset('icons/light/github.svg') }}" alt="GitHub" title="GitHub">GitHub</a>
-                <a href="{{ __('personal.linkedin') }}" class="contact__link"><img class="contact__img"
+                        src="{{ asset('icons/light/github.svg') }}" alt="GitHub"  title="GitHub">GitHub</a>
+                <a href="{{ __('personal.linkedin') }}" target="__blank" class="contact__link"><img class="contact__img"
                         src="{{ asset('icons/light/linkedin.svg') }}" alt="LinkedIn" title="LinkedIl">LinkedIn</a>
-                <a href="{{ __('personal.email') }}" class="contact__link"><img class="contact__img"
+                <a href="{{ __('personal.email') }}" target="__blank" class="contact__link"><img class="contact__img"
                         src="{{ asset('icons/light/mail.svg') }}" alt="E-Mail" title="E-Mail">E-Mail</a>
             </div>
         </div>
