@@ -103,7 +103,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding: .5rem;
-    height: 5rem;
+    height: 6rem;
     overflow: hidden;
 }
 
@@ -208,11 +208,11 @@ a {
 
 .tecnologies {
     display: flex;
-    gap: .5rem;
+    gap: .1rem;
 }
 
 .tecnologies__title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     border-bottom: solid var(--contrast) 1px;
     margin-bottom: .5rem;
     background: var(--help);

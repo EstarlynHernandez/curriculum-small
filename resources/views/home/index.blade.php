@@ -82,7 +82,7 @@
 
                     <h3 class="tecnologies__title back_end">{{ __('text.back_end') }}</h3>
 
-                    <h3 class="tecnologies__title language--lang">{{ __('text.languages') }}</h3>
+                    <h3 class="tecnologies__title language--lang">{{ __('text.language') }}</h3>
                 </div>
             </div>
 
