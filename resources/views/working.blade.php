@@ -8,7 +8,7 @@
     <body>
         <style>
             body{
-                background-image: url({{asset('img/r.webp')}});
+                background-image: url({{asset('img/working.webp')}});
                 width: 100vw;
                 height: 100vh;
                 box-sizing: border-box;

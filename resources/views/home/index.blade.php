@@ -285,7 +285,7 @@
         <div class="working dnone">
             <h2 class="working__title">🚧{{ __('text.working_in_progress') }}🚧</h2>
             <p class="working__text">{{ __('text.working_info') }}</p>
-            <img src="{{ asset('img/r.webp') }}" alt="Working in progress">
+            <img src="{{ asset('img/working.webp') }}" alt="Working in progress">
         </div>
     </div>
 @endsection
