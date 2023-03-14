@@ -115,7 +115,13 @@ a {
 .contact__icons {
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.contact__icons__link{
+    display: block;
+    width: 2.5rem;
+    padding: .2rem;
 }
 
 .fullPage {
@@ -515,7 +521,7 @@ a {
 
 .mylanguage__title{
     text-align: center;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     margin-bottom: 1rem;
 }
 
@@ -534,6 +540,18 @@ a {
     background: var(--same);
     display: grid;
     grid-template-columns: 1fr 4fr;
+}
+
+.mylanguage__hight{
+    background: linear-gradient(var(--same) 0% 90%, green);
+}
+
+.mylanguage__mid{
+    background: linear-gradient(var(--same) 0% 90%, yellow);
+}
+
+.mylanguage__low{
+    background: linear-gradient(var(--same) 0% 90%, red);
 }
 
 .mylanguage__icon{

@@ -33,6 +33,12 @@
                             title="E-Mail">
                     </a>
                 </li>
+                <li class="conctact__icons--list">
+                    <a href="{{ __('personal.telegram') }}" class="contact__icons__link">
+                        <img class="contact__icons__img" src="{{ asset('icons/light/telegram.svg') }}" alt="telegram"
+                            title="telegram">
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -82,7 +88,7 @@
 
                     <h3 class="tecnologies__title back_end">{{ __('text.back_end') }}</h3>
 
-                    <h3 class="tecnologies__title language--lang">{{ __('text.language') }}</h3>
+                    <h3 class="tecnologies__title language--lang">{{ __('text.languages') }}</h3>
                 </div>
             </div>
 
@@ -96,7 +102,8 @@
                 <p class="info__text about__text"><span class="info__list">{{ __('text.hobbies') }}:</span>
                     {{ __('personal.hobbies') }}</p>
                 <p class="info__text about__text"><span class="info__list">{{ __('text.more') }}:</span>
-                    {{ __('personal.more') }} <span class="info__link info__link--open">{{ __('text.contact_details') }}</span>.</p>
+                    {{ __('personal.more') }} <span
+                        class="info__link info__link--open">{{ __('text.contact_details') }}</span>.</p>
 
             </div>
         </section>
@@ -109,8 +116,8 @@
             <h2 class="info__title--principal">{{ __('text.pages') }}</h2>
             <section class="cards">
                 <picture class="card">
-                    <a href="https://estarlyn.com/" target="__blank"><img src="{{ asset('img/curriculum-small.webp') }}" alt="curriculum-small"
-                        title="{{ __('text.this_page') }}"></a>
+                    <a href="https://estarlyn.com/" target="__blank"><img src="{{ asset('img/curriculum-small.webp') }}"
+                            alt="curriculum-small" title="{{ __('text.this_page') }}"></a>
                 </picture>
                 <picture class="card work">
 
@@ -150,6 +157,12 @@
                     <a href="{{ __('personal.email') }}" target="__blank" class="contact__icons__link">
                         <img class="contact__icons__img" src="{{ asset('icons/light/mail.svg') }}" alt="mail"
                             title="E-Mail">
+                    </a>
+                </li>
+                <li class="conctact__icons--list">
+                    <a href="{{ __('personal.telegram') }}" target="__blank" class="contact__icons__link">
+                        <img class="contact__icons__img" src="{{ asset('icons/light/telegram.svg') }}" alt="telegram"
+                            title="telegram">
                     </a>
                 </li>
             </ul>
@@ -201,33 +214,36 @@
             <h2 class="contact__title">Contact</h2>
             <div class="contact--container">
                 <a href="{{ __('personal.github') }}" target="__blank" class="contact__link"><img class="contact__img"
-                        src="{{ asset('icons/light/github.svg') }}" alt="GitHub"  title="GitHub">GitHub</a>
-                <a href="{{ __('personal.linkedin') }}" target="__blank" class="contact__link"><img class="contact__img"
-                        src="{{ asset('icons/light/linkedin.svg') }}" alt="LinkedIn" title="LinkedIl">LinkedIn</a>
+                        src="{{ asset('icons/light/github.svg') }}" alt="GitHub" title="GitHub">GitHub</a>
+                <a href="{{ __('personal.linkedin') }}" target="__blank" class="contact__link"><img
+                        class="contact__img" src="{{ asset('icons/light/linkedin.svg') }}" alt="LinkedIn"
+                        title="LinkedIl">LinkedIn</a>
                 <a href="{{ __('personal.email') }}" target="__blank" class="contact__link"><img class="contact__img"
                         src="{{ asset('icons/light/mail.svg') }}" alt="E-Mail" title="E-Mail">E-Mail</a>
+                <a href="{{ __('personal.telegram') }}" target="__blank" class="contact__link"><img class="contact__img"
+                        src="{{ asset('icons/light/telegram.svg') }}" alt="E-Mail" title="E-Mail">Telegram</a>
             </div>
         </div>
 
         <div class="front dnone">
             <h2 class="mylanguage__title">{{ __('text.front_end') }}</h2>
             <div class="mylanguage--container">
-                <p class="mylanguage__text">
+                <p class="mylanguage__text mylanguage__hight">
                     <img src="{{ asset('icons/light/html.svg') }}" alt="HTML" title="HTML"
                         class="mylanguage__icon">
                     HTML
                 </p>
-                <p class="mylanguage__text">
+                <p class="mylanguage__text mylanguage__hight">
                     <img src="{{ asset('icons/light/css.svg') }}" alt="CSS" title="CSS"
                         class="mylanguage__icon">
                     CSS
                 </p>
-                <p class="mylanguage__text">
+                <p class="mylanguage__text mylanguage__hight">
                     <img src="{{ asset('icons/light/js.svg') }}" alt="JS" title="JS"
                         class="mylanguage__icon">
                     JavaScript
                 </p>
-                <p class="mylanguage__text">
+                <p class="mylanguage__text mylanguage__mid">
                     <img src="{{ asset('icons/light/react.svg') }}" alt="React" title='react'
                         class="mylanguage__icon">
                     React
@@ -238,22 +254,22 @@
         <div class="back dnone">
             <h2 class="mylanguage__title">{{ __('text.back_end') }}</h2>
             <div class="mylanguage--container">
-                <p class="mylanguage__text">
+                <p class="mylanguage__text mylanguage__hight">
                     <img src="{{ asset('icons/light/code.svg') }}" alt="PHP" title="php"
                         class="mylanguage__icon">
                     PHP
                 </p>
-                <p class="mylanguage__text">
+                <p class="mylanguage__text mylanguage__hight">
                     <img src="{{ asset('icons/light/laravel.svg') }}" alt="Laravel" title="Laravel"
                         class="mylanguage__icon">
                     Laravel
                 </p>
-                <p class="mylanguage__text">
+                <p class="mylanguage__text mylanguage__low">
                     <img src="{{ asset('icons/light/symfony.svg') }}" alt="Symfony" title="Symfony"
                         class="mylanguage__icon">
                     Symfony
                 </p>
-                <p class="mylanguage__text">
+                <p class="mylanguage__text mylanguage__mid">
                     <img src="{{ asset('icons/light/sql.svg') }}" alt="SQL" title="SQL"
                         class="mylanguage__icon">
                     SQL
@@ -264,17 +280,17 @@
         <div class="lang dnone">
             <h2 class="mylanguage__title">{{ __('text.language') }}</h2>
             <div class="mylanguage--container">
-                <p class="mylanguage__text">
+                <p class="mylanguage__text mylanguage__low">
                     <img src="{{ asset('icons/light/en.svg') }}" alt="En" title="English"
                         class="mylanguage__icon">
                     {{ __('text.english') }}
                 </p>
-                <p class="mylanguage__text">
+                <p class="mylanguage__text mylanguage__hight">
                     <img src="{{ asset('icons/light/es.svg') }}" alt="Es" title="Español"
                         class="mylanguage__icon">
                     {{ __('text.spanish') }}
                 </p>
-                <p class="mylanguage__text">
+                <p class="mylanguage__text mylanguage__hight">
                     <img src="{{ asset('icons/light/it.svg') }}" alt="It" title="Italiano"
                         class="mylanguage__icon">
                     {{ __('text.italian') }}

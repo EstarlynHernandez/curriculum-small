@@ -18,5 +18,6 @@ return [
     'page_updating' => 'This page is continuously updated since the day 27 of feb 2023',
     'github' => 'https://github.com/EstarlynHernandez',
     'linkedin' => 'https://www.linkedin.com/in/estarlyn-francisco-hernandez-ulloa-aa029a208/',
-    'email' => 'mailto:estarlynhernandez@hotmail.com'
+    'email' => 'mailto:estarlynhernandez@hotmail.com',
+    'telegram' => 'http://t.me/estarlyn',
 ];

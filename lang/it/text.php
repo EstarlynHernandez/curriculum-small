@@ -29,4 +29,6 @@ return [
     'spanish' => 'Spagnolo',
     'english' => 'Inglese',
     'italian' => 'Italiano',
+    'working_in_progress' => 'Lavori in corso',
+    'working_info' => 'Stiamo lavorando per rendere questa sezione o link disponibile',
 ];
