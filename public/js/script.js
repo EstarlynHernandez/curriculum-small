@@ -111,28 +111,29 @@ function size(item) {
   });
   item.srcElement.classList.add("button--active");
 }
+
+// add the loacal config
 function localConfig() {
   var root = document.querySelector(":root");
   var userConfig = localStorage.getItem("estarlyn.com");
   userConfig = JSON.parse(userConfig);
   switch (userConfig["fontSize"]) {
     case 1:
-      document.querySelector(".button--active").classList.remove("button--active");
       document.querySelector(".config--size button:nth-child(1)").classList.add("button--active");
       root.setAttribute("style", "font-size: 60%");
       break;
     case 2:
-      document.querySelector(".button--active").classList.remove("button--active");
       document.querySelector(".config--size button:nth-child(2)").classList.add("button--active");
       root.setAttribute("style", "font-size: 90%");
       break;
     case 3:
-      document.querySelector(".button--active").classList.remove("button--active");
       document.querySelector(".config--size button:nth-child(3)").classList.add("button--active");
       root.setAttribute("style", "font-size: 130%");
       break;
   }
 }
+
+// set the local config
 function SetConfig(item, value) {
   var userConfig = JSON.parse(localStorage.getItem("estarlyn.com"));
   userConfig[item] = value;

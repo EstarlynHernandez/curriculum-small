@@ -5,7 +5,7 @@
 @endsection
 
 @section('title')
-    Home
+    Estarlyn Hernandez
 @endsection
 
 @section('content')
@@ -16,7 +16,7 @@
             <h4 class="nav__title">{{ __('text.contact') }}</h4>
             <ul class="contact__icons">
                 <li class="conctact__icons--list">
-                    <a href="{{ __('personal.github') }}" target="__blank" class="contact__icons__link">
+                    <a href="{{ __('personal.github') }}" class="contact__icons__link">
                         <img class="contact__icons__img" src="{{ asset('icons/light/github.svg') }}" alt="github"
                             title='GitHub'>
                     </a>
@@ -61,11 +61,12 @@
             {{-- covers --}}
             <div class="covers">
                 <picture class="card card--extra">
-                    <a href="{{ url('/') }}" target="__blank"><img src="{{ asset('img/curriculum-small.webp') }}"
+                    <a href="#" target="__blank"><img src="{{ asset('img/curriculum-small.webp') }}"
                             alt="curriculum-small" title="{{ __('text.this_page') }}"></a>
                 </picture>
-                <picture class="card card--extra work">
-
+                <picture class="card card--extra">
+                    <a href="https://shop.estyos.com/" target="__blank"><img src="{{ asset('img/shop.webp') }}"
+                            alt="Shop" title="Shop"></a>
                 </picture>
                 <picture class="card card--extra work">
 
@@ -116,11 +117,12 @@
             <h2 class="info__title--principal">{{ __('text.pages') }}</h2>
             <section class="cards">
                 <picture class="card">
-                    <a href="https://estarlyn.com/" target="__blank"><img src="{{ asset('img/curriculum-small.webp') }}"
+                    <a href="#"><img src="{{ asset('img/curriculum-small.webp') }}"
                             alt="curriculum-small" title="{{ __('text.this_page') }}"></a>
                 </picture>
-                <picture class="card work">
-
+                <picture class="card">
+                    <a href="https://shop.estyos.com/" target="__blank"><img src="{{ asset('img/shop.webp') }}"
+                        alt="Shop" title="Shop"></a>
                 </picture>
                 <picture class="card work">
 
@@ -189,7 +191,7 @@
             <h2 class="config__title">{{ __('text.font_size') }}</h2>
             <div class="config--size">
                 <button id='text__small' class="config__button button">S</button>
-                <button id="text__medium" class="config__button button button--active">M</button>
+                <button id="text__medium" class="config__button button">M</button>
                 <button id="text__big" class="config__button button">L</button>
             </div>
 
