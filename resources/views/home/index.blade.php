@@ -60,17 +60,39 @@
 
             {{-- covers --}}
             <div class="covers">
-                <picture class="card card--extra">
-                    <a href="#" target="__blank"><img src="{{ asset('img/curriculum-small.webp') }}"
-                            alt="curriculum-small" title="{{ __('text.this_page') }}"></a>
-                </picture>
-                <picture class="card card--extra">
-                    <a href="https://shop.estyos.com/" target="__blank"><img src="{{ asset('img/shop.webp') }}"
-                            alt="Shop" title="Shop"></a>
-                </picture>
-                <picture class="card card--extra work">
+                <div class="pages--container">
 
-                </picture>
+                    <picture class="card card--extra">
+                        <a href="#" target="__blank"><img src="{{ asset('img/curriculum-small.webp') }}"
+                                alt="curriculum-small" title="{{ __('text.this_page') }}"></a>
+                    </picture>
+                    <div class="pages__tecnologies mNone">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/laravel.svg') }}" alt="laravel"
+                            title="laravel">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/php.svg') }}" alt="PHP"
+                            title="PHP">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/js.svg') }}" alt="JavaScript"
+                            title="GitHub">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/css.svg') }}" alt="CSS"
+                            title="CSS">
+                    </div>
+                </div>
+                <div class="pages--container">
+                    <picture class="card card--extra">
+                        <a href="https://shop.estyos.com/" target="__blank"><img src="{{ asset('img/shop.webp') }}"
+                                alt="Shop" title="Shop"></a>
+                    </picture>
+                    <div class="pages__tecnologies mNone">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/laravel.svg') }}" alt="Laravel"
+                            title="Laravel">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/sql.svg') }}" alt="SQL"
+                            title="SQL">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/php.svg') }}" alt="PHP"
+                            title="PHP">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/css.svg') }}" alt="CSS"
+                            title="CSS">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -117,18 +139,33 @@
             <h2 class="info__title--principal">{{ __('text.pages') }}</h2>
             <section class="cards">
                 <picture class="card">
-                    <a href="#"><img src="{{ asset('img/curriculum-small.webp') }}"
-                            alt="curriculum-small" title="{{ __('text.this_page') }}"></a>
+                    <a href="#"><img src="{{ asset('img/curriculum-small.webp') }}" alt="curriculum-small"
+                            title="{{ __('text.this_page') }}"></a>
+                    <div class="pages__tecnologies">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/laravel.svg') }}" alt="laravel"
+                            title="laravel">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/php.svg') }}" alt="php"
+                            title="php">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/js.svg') }}" alt="javascript"
+                            title="javascript">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/css.svg') }}" alt="css"
+                            title="css">
+                    </div>
                 </picture>
+
                 <picture class="card">
-                    <a href="https://shop.estyos.com/" target="__blank"><img src="{{ asset('img/shop.webp') }}"
-                        alt="Shop" title="Shop"></a>
-                </picture>
-                <picture class="card work">
-
-                </picture>
-                <picture class="card work">
-
+                    <a href="https://shop.estyos.com/" target="__blank"><img src="{{ asset('img/shop.webp') }}" alt="curriculum-small"
+                            title="{{ __('text.this_page') }}"></a>
+                    <div class="pages__tecnologies">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/laravel.svg') }}" alt="laravel"
+                            title="laravel">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/sql.svg') }}" alt="sql"
+                            title="sql">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/php.svg') }}" alt="php"
+                            title="php">
+                        <img class="pages__tecnology" src="{{ asset('icons/light/css.svg') }}" alt="css"
+                            title="css">
+                    </div>
                 </picture>
             </section>
         </section>
@@ -222,8 +259,9 @@
                         title="LinkedIl">LinkedIn</a>
                 <a href="{{ __('personal.email') }}" target="__blank" class="contact__link"><img class="contact__img"
                         src="{{ asset('icons/light/mail.svg') }}" alt="E-Mail" title="E-Mail">E-Mail</a>
-                <a href="{{ __('personal.telegram') }}" target="__blank" class="contact__link"><img class="contact__img"
-                        src="{{ asset('icons/light/telegram.svg') }}" alt="E-Mail" title="E-Mail">Telegram</a>
+                <a href="{{ __('personal.telegram') }}" target="__blank" class="contact__link"><img
+                        class="contact__img" src="{{ asset('icons/light/telegram.svg') }}" alt="E-Mail"
+                        title="E-Mail">Telegram</a>
             </div>
         </div>
 
@@ -257,7 +295,7 @@
             <h2 class="mylanguage__title">{{ __('text.back_end') }}</h2>
             <div class="mylanguage--container">
                 <p class="mylanguage__text mylanguage__hight">
-                    <img src="{{ asset('icons/light/code.svg') }}" alt="PHP" title="php"
+                    <img src="{{ asset('icons/light/php.svg') }}" alt="PHP" title="php"
                         class="mylanguage__icon">
                     PHP
                 </p>
