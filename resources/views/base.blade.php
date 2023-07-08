@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/desktop.css') }}" media="screen and (min-width:900px)">
+    @vite('resources/css/app.css')
+    @vite('resources/css/desktop.css')
     <link rel="shortcut icon" href="{{asset('icons/dark/name.svg')}}" type="image/x-icon">
     <title>@yield('title')</title>
-    <script src="{{asset('js/script.js')}}"></script>
+    @vite('resources/js/app.js')
     @yield('seo')
 
     {{-- google font --}}
