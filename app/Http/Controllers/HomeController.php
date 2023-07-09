@@ -12,12 +12,12 @@ class HomeController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index(string $locale)
+    public function index(string $lang)
     {
-        if(! in_array($locale, ['es', 'en', 'it'])){
-            $locale = 'en';
+        if(!in_array($lang, ['es', 'en', 'it'])){
+            $lang = 'en';
         }
-        App::setLocale($locale);
+        App::setLocale($lang);
         
         return view('home/index');
     }

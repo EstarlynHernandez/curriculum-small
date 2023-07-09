@@ -16,6 +16,6 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [HomeController::class, 'index'])->middleware('lang');
 
-Route::get('/{locale}', [HomeController::class, 'index'])->name('Home');
+Route::get('/{lang}', [HomeController::class, 'index'])->name('Home');
 
 
