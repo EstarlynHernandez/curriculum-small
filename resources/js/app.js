@@ -21,7 +21,9 @@ function main() {
 
     let config = document.querySelector(".options");
     let shadow = document.querySelector(".shadow");
+    let closePopup = document.querySelectorAll(".popup .close");
     let textSize = document.querySelectorAll("#text__size button");
+    let cards = document.querySelectorAll(".open");
     let works = document.querySelectorAll(".work");
     let back = document.querySelector("#back_end");
     let front = document.querySelector("#front_end");
@@ -30,6 +32,18 @@ function main() {
 
     shadow.addEventListener("click", () => {
         menuFull();
+    });
+
+    closePopup.forEach((close) => {
+        close.addEventListener("click", () => {
+            menuFull();
+        });
+    });
+
+    cards.forEach((card) => {
+        card.addEventListener("click", (e) => {
+            menuFull(e.target.name);
+        });
     });
 
     contact.addEventListener("click", () => {
@@ -73,9 +87,8 @@ function menuFull(name) {
     shadowChildren.forEach((element) => {
         element.setAttribute("style", "transform: scale(0.001)");
     });
-    
-    body.classList.remove("hidden");
-    
+
+
     if (name) {
         let item = document.querySelector("." + name);
 
@@ -90,8 +103,8 @@ function menuFull(name) {
 
     } else {
 
+        body.classList.remove("hidden");
         setTimeout(() => {
-            // container.classList.add("dnone");
             shadowChildren.forEach((element) => {
                 element.classList.add("dnone");
             });
@@ -135,7 +148,7 @@ function size(item) {
 // add the loacal config
 function localConfig() {
     let root = document.querySelector(":root");
-    let userConfig = JSON.parse(localStorage.getItem("estarlyn.com"));
+    let userConfig = JSON.parse(localStorage.getItem("options"));
 
     switch (userConfig["fontSize"]) {
         case 1:
@@ -156,7 +169,7 @@ function localConfig() {
 
 // set the local config
 function SetConfig(item, value) {
-    let userConfig = JSON.parse(localStorage.getItem("estarlyn.com"));
+    let userConfig = JSON.parse(localStorage.getItem("options"));
     userConfig[item] = value;
-    localStorage.setItem("estarlyn.com", JSON.stringify(userConfig));
+    localStorage.setItem("options", JSON.stringify(userConfig));
 }

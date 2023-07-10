@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'name' => 'Estarlyn',
-    'lastname' => 'Hernandez',
+    'name' => 'Estarlyn Francisco',
+    'lastname' => 'Hernandez Ulloa',
     'knowledge' => 'I am a web developer who specializes in front-end development.
             I can also work on the back-end with frameworks like Laravel
             and languages like PHP. For example, this page was created with

@@ -2,8 +2,6 @@
 
 return [
     'lang' => 'it',
-    'name' => 'Estarlyn',
-    'lastname' => 'Hernandez',
     'knowledge' => 'Sono uno sviluppatore web specializzato nello sviluppo front end. 
     Posso anche lavorare nel backend con framework come Laravel o solo con linguaggi 
     come PHP. Per esempio, questa pagina è stata creata con il framework Laravel usando 
