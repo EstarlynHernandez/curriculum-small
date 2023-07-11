@@ -2,17 +2,15 @@
 
 return [
     'lang' => 'it',
-    'knowledge' => 'Sono uno sviluppatore web specializzato nello sviluppo front end. 
-    Posso anche lavorare nel backend con framework come Laravel o solo con linguaggi 
-    come PHP. Per esempio, questa pagina è stata creata con il framework Laravel usando 
-    i linguaggi Laravel Blade, PHP, CSS, JavaScript. Se siete interessati a scoprire di 
-    tutti i linguaggi di programazoine, framework e lingue che conosco potetete premero su uno dei pulsanti qui sotto',
-    'hobbies' => 'Videogiochi, Musica, Programmazzione
-            Harware e Software',
-    'more' => 'Sono dominicano e attualmente abito in Italia. Ho completato le scuole medie
-     in Repubblica Dominicana e le scuole superiori in Italia. Ho cominciato gli studi di programmazione
-      per conto mio via internet in diversi siti come MDN, Platzi, YouTube, Stack Overflow, Udemy e altri.
-       Se siete interessati a scoprire di più su di me potete contattarmi tramite le mie',
+    'knowledge' => 'Come sviluppatore web Full Stack, possiedo la capacità di lavorare sia sul front-end 
+        che sul back-end di applicazioni web, utilizzando una vasta gamma di linguaggi di programmazione, 
+        framework e librerie. La mia esperienza in queste aree mi consente di sviluppare e mantenere applicazioni web complesse, 
+        garantendo esperienze utente fluide e una gestione efficiente dei dati',
+    'hobbies' => 'Videogiochi, Musica, Programmazzione',
+    'personal_info' => ' Sono di nazionalità dominicana e attualmente risiedo in Italia. Ho completato il mio percorso scolastico 
+                di scuola media nella Repubblica Dominicana e ho proseguito gli studi superiori in Italia. La mia formazione come sviluppatore 
+                web è iniziata in modo autodidatta, utilizzando risorse online come YouTube, Stack Overflow, Udemy, mdn, Platzi e altre ancora. 
+                Se desideri ottenere ulteriori dettagli o informazioni, ti invito a contattarmi utilizzando i miei',
     'page_info' => 'Estarlyn.com e Estyos.com sono pagine riservate per le mie informazioni di lavoro e i miei progetti personali',
     'page_updating' => 'Questa pagina è continuamente aggiornata dal 27 febbraio del 2023',
 ];

@@ -3,21 +3,19 @@
 return [
     'name' => 'Estarlyn Francisco',
     'lastname' => 'Hernandez Ulloa',
-    'knowledge' => 'I am a web developer who specializes in front-end development.
-            I can also work on the back-end with frameworks like Laravel
-            and languages like PHP. For example, this page was created with
-            Laravel using Blade, PHP, CSS, and JavaScript. If you want to know
-            all of my language skills, you can click on the button below this text',
-    'hobbies' => 'Video games, music, programming,
-            software and hardware',
-    'more' => 'I am Dominican and I live in Italy. I did middle school in the
-            Dominican Republic and high school in Italy. I started my web developer study by myself on the internet
-            on various pages like YouTube, Stack Overflow, Udemy, mdn, Platzi and more. If you are interested in having
-            more information, you can contact me by my',
+    'knowledge' => 'As a Full Stack Web Developer, I possess the ability to work on both the front-end and back-end of web 
+        applications, utilizing a diverse range of programming languages, frameworks, and libraries. My expertise in these 
+        areas allows me to develop and maintain complex web applications, ensuring seamless user experiences and efficient data management.',
+    'personal_info' => 'I am a Dominican national currently residing in Italy. I completed my middle school education in 
+        the Dominican Republic and pursued my high school studies in Italy. My journey as a web developer began as a 
+        self-directed learner, utilizing online resources such as YouTube, Stack Overflow, Udemy, mdn, Platzi, among others. 
+        If you require further details or information, please feel free to contact me using the provided',
     'page_info' => 'estarlyn.com and estyos.eu are pages reserved for my job info and my personal projects',
     'page_updating' => 'This page is continuously updated since the day 27 of feb 2023',
     'github' => 'https://github.com/EstarlynHernandez',
     'linkedin' => 'https://www.linkedin.com/in/estarlyn-francisco-hernandez-ulloa-aa029a208/',
     'email' => 'mailto:estarlynhernandez@hotmail.com',
     'telegram' => 'http://t.me/estarlyn',
+    'instagram' => 'https://www.instagram.com/estarlyn2107/',
+    'twitter' => 'https://twitter.com/estarlyn2107',
 ];

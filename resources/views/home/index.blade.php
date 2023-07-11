@@ -116,8 +116,9 @@
                     {{ __('personal.lastname') }} </p>
                 <p class="text"><span class="info__list">{{ __('text.hobbies') }}:</span>
                     {{ __('personal.hobbies') }}</p>
-                <p class="text"><span class="info__list">{{ __('text.more') }}:</span>
-                    {{ __('personal.more') }} <span class="link" id="contact">{{ __('text.contact_details') }}</span>.
+                <p class="text"><span class="info__list">{{ __('text.additional_info') }}:</span>
+                    {{ __('personal.personal_info') }} <span class="link"
+                        id="contact">{{ __('text.contact_links') }}</span>.
                 </p>
 
             </div>
@@ -209,19 +210,29 @@
                 </li>
                 <li>
                     <a href="{{ __('personal.telegram') }}" target="__blank" class="button long medium"><img
-                            class="icon__medium" src="{{ asset('icons/light/telegram.svg') }}" alt="E-Mail"
-                            title="E-Mail">Telegram</a>
+                            class="icon__medium" src="{{ asset('icons/light/telegram.svg') }}" alt="telegram"
+                            title="telegram">Telegram</a>
+                </li>
+                <li>
+                    <a href="{{ __('personal.instagram') }}" target="__blank" class="button long medium"><img
+                            class="icon__medium" src="{{ asset('icons/light/instagram.svg') }}" alt="instagram"
+                            title="instagram">Instagram</a>
+                </li>
+                <li>
+                    <a href="{{ __('personal.twitter') }}" target="__blank" class="button long medium"><img
+                            class="icon__medium" src="{{ asset('icons/light/telegram.svg') }}" alt="twitter"
+                            title="twitter">Twitter</a>
                 </li>
             </ul>
         </article>
 
         {{-- pages --}}
-        <article class="contacts__list">
+        {{-- <article class="contacts__list">
             <h2 class="title">{{ __('text.more') }}</h2>
             <p class="link work">{{ __('text.projects') }}</p>
             <a class="link work">Blog</a>
             <p class="link work">Alternative Portfoglio</p>
-        </article>
+        </article> --}}
 
     </section>
     <footer class="footer">
@@ -287,11 +298,17 @@
                 <a href="{{ __('personal.linkedin') }}" target="__blank" class="button long medium"><img
                         class="icon__medium" src="{{ asset('icons/light/linkedin.svg') }}" alt="LinkedIn"
                         title="LinkedIl">LinkedIn</a>
+                <a href="{{ __('personal.instagram') }}" target="__blank" class="button long medium"><img
+                        class="icon__medium" src="{{ asset('icons/light/instagram.svg') }}" alt="instagram"
+                        title="instagram">Instagram</a>
+                <a href="{{ __('personal.twitter') }}" target="__blank" class="button long medium"><img
+                        class="icon__medium" src="{{ asset('icons/light/twitter.svg') }}" alt="twitter"
+                        title="twitter">Twitter</a>
                 <a href="{{ __('personal.email') }}" target="__blank" class="button long low"><img class="icon__medium"
                         src="{{ asset('icons/light/mail.svg') }}" alt="E-Mail" title="E-Mail">E-Mail</a>
                 <a href="{{ __('personal.telegram') }}" target="__blank" class="button long low"><img
-                        class="icon__medium" src="{{ asset('icons/light/telegram.svg') }}" alt="E-Mail"
-                        title="E-Mail">Telegram</a>
+                        class="icon__medium" src="{{ asset('icons/light/telegram.svg') }}" alt="telegram"
+                        title="telegram">Telegram</a>
             </div>
         </div>
 
@@ -352,7 +369,8 @@
                     C#
                 </p>
                 <p class="button long medium">
-                    <img src="{{ asset('icons/light/mysql.svg') }}" alt="MySQL" title="MySQL" class="icon__medium">
+                    <img src="{{ asset('icons/light/mysql.svg') }}" alt="MySQL" title="MySQL"
+                        class="icon__medium">
                     MySQL
                 </p>
                 <p class="button long high">
@@ -409,14 +427,14 @@
                 </picture>
 
                 <div class="project__lang">
-                    <a target="__blank" class="button active">This Page</a>
+                    <p target="__blank" class="button active">This Page</p>
                     <a href="https://github.com/EstarlynHernandez/curriculum-small" target="__blank"
                         class="button long "><img src="{{ asset('icons/light/github.svg') }}" alt="github"
                             title="github" class="icon__medium">GitHub</a>
                 </div>
 
                 <div>
-                    <h3 class="title__small">Languajes Used</h3>
+                    <h3 class="title__small">{{ __('text.programing_language') }}</h3>
                     <ul class="project__lang">
                         <li class="button long"><img src="{{ asset('icons/light/php.svg') }}" alt="PHP"
                                 title="PHP" class="icon__medium">PHP</li>
@@ -432,20 +450,19 @@
                 </div>
                 <div>
                     <ul class="list">
-                        <h3 class="title__small">Details</h3>
-                        <li class="button long"><b>Status:</b> Working</li>
-                        <li class="button long"><b>Creator:</b> Estarlyn Hernandez</li>
-                        <li class="button long"><b>Repository:</b> GitHub</li>
-                        <li class="button long"><b>Hosting:</b> Linux</li>
-                        <li class="button long"><b>Base:</b> Laravel</li>
-                        <li class="button long"><b>Lang Base:</b> PHP</li>
-                        <li class="button long"><b>Created At:</b> February 2023</li>
+                        <h3 class="title__small">{{ __('text.details') }}</h3>
+                        <li class="button long"><b>{{ __('text.status') }}:</b> {{ __('text.in_progress') }}</li>
+                        <li class="button long"><b>{{ __('text.creator') }}:</b> Estarlyn Hernandez</li>
+                        <li class="button long"><b>{{ __('text.repository') }}:</b> GitHub</li>
+                        <li class="button long"><b>{{ __('text.hosting') }}:</b> Linux</li>
+                        <li class="button long"><b>{{ __('text.base') }}:</b> Laravel</li>
+                        <li class="button long"><b>{{ __('text.base_language') }}:</b> PHP</li>
+                        <li class="button long"><b>{{ __('text.created') }}:</b> {{ __('text.february') }} 2023</li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="title__small">Info</h3>
-                    <p class="text">A personal Portfoglio that contains all of my personal project online this portfoglio
-                        is make using PHP, Laravel, JavaScript and CSS</p>
+                    <h3 class="title__small">{{ __('text.info') }}</h3>
+                    <p class="text">{{ __('projects.info_portfolio') }}</p>
                 </div>
             </section>
         </div>
@@ -457,14 +474,14 @@
                 </picture>
 
                 <div class="project__lang">
-                    <a href="https://shop.estyos.com/" target="__blank" class="button">Open</a>
+                    <a href="https://shop.estyos.com/" target="__blank" class="button">{{ __('text.visit') }}</a>
                     <a href="https://github.com/EstarlynHernandez/shop" target="__blank" class="button long "><img
                             src="{{ asset('icons/light/github.svg') }}" alt="github" title="github"
                             class="icon__medium">GitHub</a>
                 </div>
 
                 <div>
-                    <h3 class="title__small">Languajes Used</h3>
+                    <h3 class="title__small">{{ __('text.programing_language') }}</h3>
                     <ul class="project__lang">
                         <li class="button long"><img src="{{ asset('icons/light/php.svg') }}" alt="PHP"
                                 title="PHP" class="icon__medium">PHP</li>
@@ -482,20 +499,19 @@
                 </div>
                 <div>
                     <ul class="list">
-                        <h3 class="title__small">Details</h3>
-                        <li class="button long"><b>Status:</b> Working</li>
-                        <li class="button long"><b>Creator:</b> Estarlyn Hernandez</li>
-                        <li class="button long"><b>Repository:</b> GitHub</li>
-                        <li class="button long"><b>Hosting:</b> Linux</li>
-                        <li class="button long"><b>Base:</b> Laravel</li>
-                        <li class="button long"><b>Lang Base:</b> PHP</li>
-                        <li class="button long"><b>Created At:</b> March 2023</li>
+                        <h3 class="title__small">{{ __('text.details') }}</h3>
+                        <li class="button long"><b>{{ __('text.status') }}:</b> {{ __('text.in_progress') }}</li>
+                        <li class="button long"><b>{{ __('text.creator') }}:</b> Estarlyn Hernandez</li>
+                        <li class="button long"><b>{{ __('text.repository') }}:</b> GitHub</li>
+                        <li class="button long"><b>{{ __('text.hosting') }}:</b> Linux</li>
+                        <li class="button long"><b>{{ __('text.base') }}:</b> Laravel</li>
+                        <li class="button long"><b>{{ __('text.base_language') }}:</b> PHP</li>
+                        <li class="button long"><b>{{ __('text.created') }}:</b> {{ __('text.march') }} 2023</li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="title__small">Info</h3>
-                    <p class="text">A personal page to test how i can make a shop for a variosly type of product. This
-                        page has a search product, category group, type recomendation, car, product remains and more</p>
+                    <h3 class="title__small">{{ __('text.info') }}</h3>
+                    <p class="text">{{ __('projects.info_shop') }}</p>
                 </div>
             </section>
         </div>
@@ -508,14 +524,14 @@
                 </picture>
 
                 <div class="project__lang">
-                    <a href="https://tasks.estyos.com/" target="__blank" class="button">Open</a>
+                    <a href="https://tasks.estyos.com/" target="__blank" class="button">{{ __('text.visit') }}</a>
                     <a href="https://github.com/EstarlynHernandez/Task_manager" target="__blank"
                         class="button long "><img src="{{ asset('icons/light/github.svg') }}" alt="github"
                             title="github" class="icon__medium">GitHub</a>
                 </div>
 
                 <div>
-                    <h3 class="title__small">Languajes Used</h3>
+                    <h3 class="title__small">{{ __('text.programing_language') }}</h3>
                     <ul class="project__lang">
                         <li class="button long"><img src="{{ asset('icons/light/php.svg') }}" alt="PHP"
                                 title="PHP" class="icon__medium">PHP</li>
@@ -536,19 +552,18 @@
                 <div>
                     <ul class="list">
                         <h3 class="title__small">Details</h3>
-                        <li class="button long"><b>Status:</b> Working</li>
-                        <li class="button long"><b>Creator:</b> Estarlyn Hernandez</li>
-                        <li class="button long"><b>Repository:</b> GitHub</li>
-                        <li class="button long"><b>Hosting:</b> Linux</li>
-                        <li class="button long"><b>Base:</b> React</li>
-                        <li class="button long"><b>Lang Base:</b> JavaScript</li>
-                        <li class="button long"><b>Created At:</b> April 2023</li>
+                        <li class="button long"><b>{{ __('text.status') }}:</b> {{ __('text.in_progress') }}</li>
+                        <li class="button long"><b>{{ __('text.creator') }}:</b> Estarlyn Hernandez</li>
+                        <li class="button long"><b>{{ __('text.repository') }}:</b> GitHub</li>
+                        <li class="button long"><b>{{ __('text.hosting') }}:</b> Linux</li>
+                        <li class="button long"><b>{{ __('text.base') }}:</b> React</li>
+                        <li class="button long"><b>{{ __('text.base_language') }}:</b> JavaScript</li>
+                        <li class="button long"><b>{{ __('text.created') }}:</b> {{ __('text.april') }} 2023</li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="title__small">Info</h3>
-                    <p class="text">A Task manager make with react. In this page you can create task, group, task with
-                        count ant time, task by date and more</p>
+                    <h3 class="title__small">{{ __('text.info') }}</h3>
+                    <p class="text">{{ __('projects.info_task') }}</p>
                 </div>
             </section>
         </div>

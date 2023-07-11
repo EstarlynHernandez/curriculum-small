@@ -455,6 +455,15 @@ img {
   justify-content: space-around;
 }
 
+@media screen and (min-width: 900px) {
+  .options{
+    bottom: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
 /* more popups */
 .popup__list {
   margin-bottom: 1rem;
@@ -527,7 +536,7 @@ img {
     bottom: 0.5rem;
     right: 0.5rem;
     overflow: auto;
-    min-width: 28rem;
+    min-width: 35rem;
     width: max-content;
   }
 
@@ -572,7 +581,8 @@ img {
   gap: .5rem;
 }
 
-.project__lang a{
+.project__lang a,
+.project__lang p{
   display: flex;
   justify-content: center;
 }
