@@ -1,0 +1,16 @@
+{
+  "public/icons/dark/menu.svg": {
+    "file": "assets/menu-1415c304.svg",
+    "src": "public/icons/dark/menu.svg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-2e94d8de.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-65ab6c98.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
