@@ -220,7 +220,7 @@
                 </li>
                 <li>
                     <a href="{{ __('personal.twitter') }}" target="__blank" class="button long medium"><img
-                            class="icon__medium" src="{{ asset('icons/light/telegram.svg') }}" alt="twitter"
+                            class="icon__medium" src="{{ asset('icons/light/twitter.svg') }}" alt="twitter"
                             title="twitter">Twitter</a>
                 </li>
             </ul>
